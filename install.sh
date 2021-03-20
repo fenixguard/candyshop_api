@@ -1,13 +1,13 @@
 #!/bin/bash
 
-echo "Clone repo project into /home/candyshop/soft/ ..."
-sudo mkdir /home/entrant/candyshop
-cd /home/entrant/candyshop/
+echo "Clone repo project into /home/entrant/soft ..."
+sudo mkdir /home/entrant/soft
+cd /home/entrant/soft/
 git clone https://www.github.com/fenixguard/candyshop_api.git
 echo "Done!"
 
 echo "Coping config file..."
-cp /home/candyshop/soft/candyshop_api/candyshop.service /etc/systemd/system/
+cp /home/entrant/soft/candyshop_api/candyshop.service /etc/systemd/system/
 echo "Done!"
 
 echo "Reloading daemon..."

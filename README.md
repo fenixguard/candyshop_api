@@ -16,12 +16,12 @@
 
 ### Описание сервиса
 
-Все API доступны по адресу `http://127.0.0.1:8080/api/...`
+Все API доступны по адресу `http://0.0.0.0:8080/api/...`
 
-1. POST /couriers - `http://127.0.0.1:8080/api/couriers`
-1. PATCH /couriers/$courier_id - `http://127.0.0.1:8080/api/couriers/$courier_id`
-1. POST /orders - `http://127.0.0.1:8080/api/orders`
-1. POST /orders/assign - `http://127.0.0.1:8080/api/orders/assign`
-1. POST /orders/complete - `http://127.0.0.1:8080/api/orders/complete`
-1. GET /couriers/$courier_id - `http://127.0.0.1:8080/api/couriers/$courier_id`
+1. POST /couriers - `http://0.0.0.0:8080/api/couriers`
+1. PATCH /couriers/$courier_id - `http://0.0.0.0:8080/api/couriers/$courier_id`
+1. POST /orders - `http://0.0.0.0:8080/api/orders`
+1. POST /orders/assign - `http://0.0.0.0:8080/api/orders/assign`
+1. POST /orders/complete - `http://0.0.0.0:8080/api/orders/complete`
+1. GET /couriers/$courier_id - `http://0.0.0.0:8080/api/couriers/$courier_id`
 

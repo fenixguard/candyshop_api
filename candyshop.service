@@ -1,13 +1,13 @@
 [Unit]
 Description=uWSGI instance to serve CandyShop
-After=network.target autofs.service
+After=network.target postgresql.service
 
 [Service]
-User=candyshop
-Group=candyshop
+User=entrant
+Group=entrant
 Type=simple
-WorkingDirectory=/home/soft/candy_shop
-ExecStart=/usr/local/bin/uwsgi --ini /home/soft/candy_shop/candy_shop.ini
+WorkingDirectory=/home/entrant/soft/candyshop_api
+ExecStart=/usr/local/bin/uwsgi --ini /home/entrant/soft/candyshop_api/candy_shop.ini
 
 [Install]
 WantedBy=multi-user.target
