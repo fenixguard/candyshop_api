@@ -7,7 +7,8 @@
    1. Создать базу `candy_delivery`
    1. Создать пользователя `candyshop`
 1. Установить Git: `sudo apt install git`
-1. Установить uWSGI: `sudo apt install uwsgi`
+1. Установить nginx: `sudo apt install nginx`
+   1. Настроить nginx
    
 ### Установка
 

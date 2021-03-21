@@ -7,7 +7,7 @@ User=entrant
 Group=entrant
 Type=simple
 WorkingDirectory=/home/entrant/soft/candyshop_api
-ExecStart=/usr/bin/uwsgi --ini /home/entrant/soft/candyshop_api/candy_shop.ini
+ExecStart=/home/entrant/.local/bin/uwsgi --ini /home/entrant/soft/candyshop_api/candy_shop.ini
 
 [Install]
 WantedBy=multi-user.target
