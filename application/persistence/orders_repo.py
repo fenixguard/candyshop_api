@@ -13,7 +13,7 @@ class OrdersRepo:
     def get_orders_for_assign(courier: Couriers) -> List[tuple]:
         query = sa.text("SELECT DISTINCT orders.order_id, orders.weight, orders.assign FROM orders "
                         "INNER JOIN delivery_time dt on orders.order_id = dt.order_id "
-                        "JOIN working_time wt on wt.courier_id = :courier_id AND dt.from_hours <= wt.to_hours AND dt.to_hours >= wt.from_hours "
+                        "JOIN working_time wt on wt.courier_id = :courier_id AND dt.from_hours < wt.to_hours AND dt.to_hours > wt.from_hours "
                         "WHERE (region IN (SELECT region_id FROM courier_region_association WHERE courier_id = :courier_id)) "
                         "AND weight <= :weight AND (orders.courier_id IS NULL OR orders.courier_id = :courier_id) AND orders.complete = 0 "
                         "ORDER BY orders.assign DESC, orders.weight DESC;")
